@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main(){
-    int direita, cima_direita = 1, esquerda = 1;
+    int direita, cima_direita = 1, esquerda = 1, baixo, cavalo_esquerda = 0;
 
     // Movimenta a torre 5 casas para direita.
     printf("=== Movimento da torre ===\n");
@@ -24,6 +24,16 @@ int main(){
         printf("Esquerda\n");
         esquerda++;
     }while(esquerda <= 8);
+
+    // Movimenta o cavalo 2 casas para baixo e 1 casa para esquerda.
+    printf("\n=== Movimento do cavalo ===\n");
+    for(baixo = 1; baixo <= 2; baixo++){
+        printf("Baixo\n");
+    }
+    while(cavalo_esquerda < 1){
+        printf("Esquerda\n");
+        cavalo_esquerda++;
+    }
 
     return 0;
 }

@@ -50,7 +50,7 @@ int main(){
     for(int fase = 1; fase <= (casasCima + casasDireita); fase++){
         if(casasCimaFeitas < casasCima){            
             // Loop interno para as casas verticais.
-            for(int vertical = 0; vertical < 1; vertical++){
+            for(int vertical = 0; vertical < 2; vertical++){
                 printf("Cima\n");
                 casasCimaFeitas++;
             }
